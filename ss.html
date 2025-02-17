@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bedsheet Store</title>
+      
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sister's Shop</h1>
+        <p>Your one-stop shop for premium bedsheets, blankets and sleeping dress.</p>
+    </header>
+
+    <nav >
+        <button onclick="goToPage()">Sign up</button>
+        <script>
+            // Function to redirect to another page when button is clicked
+            function goToPage() {
+                window.location.href = "signin.html";  // Change "products.html" to the page you want to redirect to
+            }
+        </script>
+
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="#aboutus">About us</a>
+    
+    </nav>
+
+    <div class="container">
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="bed2.jpg" alt="Bedsheet 1">
+                    <h3>Floral Bedsheet</h3>
+                    <p>Soft and comfortable, 100% cotton.</p>
+                    <p><strong>Rs 2200</strong></p>
+                    <button>View</button>
+                </div>
+
+                <div class="product">
+                    <img src="Totebag.jpg" alt="Bedsheet 2">
+                    <h3>Totebag</h3>
+                    <p>Elegant design, wrinkle-free fabric.</p>
+                    <p><strong>Rs 500</strong></p>
+                    <button>View</button>
+                </div>
+
+                <div class="product">
+                    <img src="bed1.jpg" alt="Bedsheet 3">
+                    <h3>Patterned Bedsheet</h3>
+                    <p>Nepali pure cotton</p>
+                    <p><strong>Rs 2500</strong></p>
+                    <button>View </button>
+                </div>
+                <div class="product">
+                    <img src="bed4.jpg" alt="Bedsheet 3">
+                    <h3>Colorful Striped Bedsheet</h3>
+                    <p>Colorful Bedsheet</p>
+                    <p><strong>Rs 2500</strong></p>
+                    <button>View </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="margin-top: 50px;"  >
+           <div style="text-align: center;"> 
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <p><b>9803778895</b></p>
+            </div>
+        </section>
+    </section>
+
+    <section id="aboutus" style="margin-top: 50px;">
+        <div style="text-align: center;"> 
+          <h2 >About Us</h2>
+          <p>We are two sisters passionate about offering high-quality products that you'll love. Our goal is to provide the best for our customers with care and dedication.</p>
+       </div>
+
+    </section>
+    </div>
+
+    <footer>
+        <p>&copy; Sister's Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.product button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Item added to cart!');
+            });
+        });
+    </script>
+</body>
+</html>
